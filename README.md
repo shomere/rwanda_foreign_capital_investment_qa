@@ -7,6 +7,7 @@ Domain-specific question answering over the National Bank of Rwanda report
 - Demo video: https://youtube.com/live/08hG2uiJO-4?feature=share
 
 - Model weights:https://drive.google.com/drive/folders/19P-60sSUVRtSR3_7hDcW9KN7czUPJMYu?usp=drive_link
+- Some code in a Colab notebook: https://colab.research.google.com/drive/1ewjpQN_hq0ZDsakBjdP8tXY2bffnR-fX?usp=sharing
 
 - Live system: not hosted. Hugging Face now requires a paid plan to create Gradio Spaces
   for new free accounts. The app runs locally and is shown in the video.
