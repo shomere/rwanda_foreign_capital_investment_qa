@@ -4,10 +4,12 @@ Domain-specific question answering over the National Bank of Rwanda report
 "Foreign Private Capital in Rwanda: Survey Report – FPC 2025".
 
 ## Links
-- Demo video: [LINK]
-- Model weights: [GOOGLE DRIVE LINK]
+- Demo video: https://youtube.com/live/08hG2uiJO-4?feature=share
+
+- Model weights:https://drive.google.com/drive/folders/19P-60sSUVRtSR3_7hDcW9KN7czUPJMYu?usp=drive_link
+
 - Live system: not hosted. Hugging Face now requires a paid plan to create Gradio Spaces
-  for new free accounts. The app runs locally (see below) and is shown in the video.
+  for new free accounts. The app runs locally and is shown in the video.
 
 ## Method
 Retrieval (BM25, stopwords removed, top 3) -> extractive reader (RoBERTa-base fine-tuned from
@@ -19,7 +21,12 @@ refused if margin < 11.95 or if the question asks for advice or a prediction.
 exact-match validation: 58 train, 15 validation), 20 test, 20 refusal questions. Split by chapter.
 
 ## Results
-[PASTE THE TEST TABLE]
+Setting	hit@1	hit@3	MRR
+plain, 8 rows	0.750	1.000	0.854
++ stopwords, 8 rows	0.875	1.000	0.938
++ stopwords, 73 rows	0.507	0.836	0.675
+same, matching text instead of id	0.548	0.849	
+
 
 ## Run it
 1. pip install torch transformers rank_bm25 gradio numpy pdfplumber
